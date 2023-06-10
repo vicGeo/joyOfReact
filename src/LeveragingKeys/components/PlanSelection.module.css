@@ -1,0 +1,30 @@
+.fieldset {
+  background: white;
+}
+.optionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  border: 1px dashed hsl(0deg 0% 75%);
+  border-radius: 4px;
+}
+.option:focus-within {
+  outline: 2px solid hsl(250deg 100% 50%);
+  outline-offset: 2px;
+}
+.option input {
+  margin-left: 8px;
+  accent-color: hsl(250deg 100% 50%);
+}
+.option input:focus {
+  outline: none;
+}
+.option label {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+}
